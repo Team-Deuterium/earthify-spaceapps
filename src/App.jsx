@@ -1,9 +1,9 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import Dashboard from "./pages/Dashboard";
 import Predict from "./pages/Predict";
 import Compare from "./pages/Compare";
 import SideBar from "./comp/SideBar";
+import { ClimateProvider } from "./context/ClimateContext";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -22,7 +22,11 @@ const router = createBrowserRouter(
 );
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <ClimateProvider>
+      <RouterProvider router={router} />
+    </ClimateProvider>
+  );
 };
 
 export default App;
