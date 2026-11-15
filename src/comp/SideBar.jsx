@@ -70,15 +70,12 @@ const SideBar = () => {
           </button>
         </div>
 
-        <div className="flex items-center gap-2 px-1 py-1.5 mb-0.5 border-b border-gray-800">
+        <div className="flex items-center justify-center gap-2 px-1 py-1.5 mb-0.5 border-b border-gray-800">
           <img
             src={EarthifyLogo}
             alt="Earthify Logo"
-            className="w-6 h-6 object-contain shrink-0"
+            className="w-20 h-20 object-contain shrink-0"
           />
-          <span className="text-base font-bold tracking-tight text-white">
-            Earthify
-          </span>
         </div>
 
         <NavLink to="/" end className={navClass}>

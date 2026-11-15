@@ -1,5 +1,6 @@
 import React from "react";
 import { RAMP_CSS } from "../lib/APIhelper";
+import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
 
 export function TimeSlider({
   dates,
@@ -41,7 +42,7 @@ export function TimeSlider({
             }}
             className="rounded bg-gray-800 hover:bg-gray-700 disabled:opacity-40 px-2 py-1"
           >
-            ◀
+            <ArrowLeftIcon className="h-3 w-3" />
           </button>
           <button
             type="button"
@@ -52,7 +53,7 @@ export function TimeSlider({
             }}
             className="rounded bg-gray-800 hover:bg-gray-700 disabled:opacity-40 px-2 py-1"
           >
-            ▶
+            <ArrowRightIcon className="h-3 w-3" />
           </button>
           <span className="ml-1 font-mono text-gray-200">{activeDate}</span>
         </div>
